@@ -1,0 +1,7 @@
+{
+  "json_provider": {
+    "Elixir.Some.Nested.Module": {
+      "attr": "nested_attr"
+    }
+  }
+}

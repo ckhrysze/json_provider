@@ -1,6 +1,6 @@
 # JsonProvider
 
-**TODO: Add description**
+**A json provider for distillery 2 using the jason library**
 
 ## Installation
 
