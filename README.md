@@ -42,7 +42,7 @@ have atoms or charlists in the final config output.
   "Elixir.Some.Nested.Module": {
     "log_level": {
       "type": "atom",
-      value": "warn"
+      "value": "warn"
     }
   }
 }
