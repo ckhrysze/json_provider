@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ckhrysze/json_provider.svg?branch=master)](https://travis-ci.org/ckhrysze/json_provider)
+
 # JsonProvider
 
 **A json provider for distillery 2 using the jason library**
