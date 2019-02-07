@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ckhrysze/json_provider.svg?branch=master)](https://travis-ci.org/ckhrysze/json_provider)
+
 # JsonProvider
 
 **A json provider for distillery 2 using the jason library**
@@ -10,7 +12,7 @@ by adding `json_provider` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:json_provider, "~> 0.1.0"}
+    {:json_provider, "~> 0.3.0"}
   ]
 end
 ```
