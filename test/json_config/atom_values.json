@@ -1,0 +1,16 @@
+{
+  "json_provider": {
+    "mailer" : {
+      "adapter": {
+	"type": "atom",
+	"value": "Elixir.A.Fake.Mailer"
+      }
+    },
+    "Elixir.Some.Nested.Module": {
+      "log_level": {
+	"type": "atom",
+	"value": "warn"
+      }
+    }
+  }
+}

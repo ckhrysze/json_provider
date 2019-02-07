@@ -1,0 +1,8 @@
+{
+  "mnesia": {
+    "dir": {
+      "type": "charlist",
+      "value": "/home/tester/directory"
+    }
+  }
+}

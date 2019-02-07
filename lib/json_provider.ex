@@ -12,8 +12,16 @@ defmodule JsonProvider do
       |> Jason.decode!()
       |> to_keyword()
       |> persist()
+    else
+      exit("Error reading json config")
     end
   end
+
+  defp to_keyword(%{"type" => "atom", "value" => value} = c) when map_size(c) == 2,
+    do: String.to_atom(value)
+
+  defp to_keyword(%{"type" => "charlist", "value" => value} = c) when map_size(c) == 2,
+    do: String.to_charlist(value)
 
   defp to_keyword(config) when is_map(config) do
     for {k, v} <- config do

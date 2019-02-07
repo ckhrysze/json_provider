@@ -4,8 +4,8 @@ defmodule JsonProvider.MixProject do
   def project do
     [
       app: :json_provider,
-      version: "0.1.0",
-      elixir: "~> 1.7",
+      version: "0.3.0",
+      elixir: "~> 1.6",
       description: "A json provider for distillery 2 using jason",
       package: package(),
       start_permanent: Mix.env() == :prod,
@@ -22,7 +22,7 @@ defmodule JsonProvider.MixProject do
   defp deps do
     [
       {:jason, "~> 1.1"},
-      {:ex_doc, "~> 0.19", only: :dev}
+      {:ex_doc, "~> 0.18.0", only: :dev}
     ]
   end
 
