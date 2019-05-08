@@ -30,6 +30,11 @@ defmodule JsonProvider do
     end
   end
 
+  defp to_keyword(config) when is_list(config) do
+    config
+    |> Enum.map(&to_keyword/1)
+  end
+
   defp to_keyword(config), do: config
 
   defp persist(config) do

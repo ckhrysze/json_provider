@@ -1,0 +1,14 @@
+{
+  "kernel": {
+    "sync_nodes_optional": [
+      {
+	"type": "charlist",
+	"value": "node1@example.com"
+      },
+      {
+	"type": "charlist",
+	"value": "node2@example.com"
+      }
+    ]
+  }
+}

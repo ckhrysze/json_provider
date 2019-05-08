@@ -4,7 +4,7 @@ defmodule JsonProvider.MixProject do
   def project do
     [
       app: :json_provider,
-      version: "0.3.0",
+      version: "0.4.0",
       elixir: "~> 1.6",
       description: "A json provider for distillery 2 using jason",
       package: package(),

@@ -16,6 +16,13 @@ defmodule JsonProviderTest do
     assert "nested_attr" == get_in(config, [:attr])
   end
 
+  test "handles array of objects like mix does keyword lists" do
+    "keywords.json" |> map_path() |> JsonProvider.init()
+
+    value = Application.get_env(:first, :second)[:third][:keyword]
+    assert "keyword_value" == value
+  end
+
   test "can convert atom typed value object to atom" do
     "atom_values.json" |> map_path() |> JsonProvider.init()
 
@@ -30,5 +37,12 @@ defmodule JsonProviderTest do
     "charlist_values.json" |> map_path() |> JsonProvider.init()
 
     assert '/home/tester/directory' = Application.fetch_env!(:mnesia, :dir)
+  end
+
+  test "can handle charlists in arrays" do
+    "kernel_example.json" |> map_path() |> JsonProvider.init()
+
+    nodes = Application.fetch_env!(:kernel, :sync_nodes_optional)
+    assert ['node1@example.com', 'node2@example.com'] == nodes
   end
 end
